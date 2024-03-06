@@ -30,7 +30,9 @@ inviolable rules. In general, the repository contents should be as follows.
 
  * `README.md` should describe the contribution, how to use it, how to cite
    it, and how to replicate the experiments in the paper, following roughly
-   the format of the example. Note that the `.md` extension means "markdown,"
+   the format of the example. Please make sure to be specific about the version
+   numbers of any dependencies, hardware dependencies and anything else that might
+   be important to ensure reproducibility. Note that the `.md` extension means "markdown,"
    a simple text formatting language you can learn about
    [here](https://guides.github.com/features/mastering-markdown/).
    
