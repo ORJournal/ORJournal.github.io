@@ -3,45 +3,58 @@
 Operations Research hosts accompanying software and data of some paper as online repositories 
 within the [ORJournal Github organization](https://github.com/ORJournal). Following are
 instructions for submitting your software and/or data when requested by an editor or
-associate editor. 
+associate editor.
+
+Note that there are two goals for this process. One is to allow editors to
+attempt to replicate the experiments and reproduce the empirical data and
+results associated with submitted papers. The other is to archive the code in
+a way that will be useful to readers and allow the experiments in the paper to
+be replicated in the future. For this reason, we would like to include the
+full source code needed to perform the experiments in this repository, which
+is a fixed snapshot we can guarantee will be available in the future. This is
+the case whether or not the code is available elsewhere already (such as in a
+Github repo or on Pypi. See the FAQs below for more information.
 
 ## Repository Name
 
-You will be given access to a private repository created by the editorial staff.
-This is the repository that should be populated and that will be reviewed and eventually
-archived with the paper. The name of the repository associated with your paper will 
-be `XXXX.YYYY` and is derived from the manuscript number in manuscript central. Typically,
-`XXXX` will be the year in which the paper is submitted, whereas `YYYY`
-is a four digit sequence number that is part of the manuscript number.
+You will be given access to a private repository created by the editorial
+staff. This is the repository that should be populated and that will be
+reviewed and eventually archived with the paper. The name of the repository
+associated with your paper will be `XXXX.YYYY` and is derived from the
+manuscript number in manuscript central. Typically, `XXXX` will be the year in
+which the paper is submitted, whereas `YYYY` is a four digit sequence number
+that is part of the manuscript number.
 
 ## Preparing your repository
 
-When requesting you software/data, an editor will give you read access to the reopsitory. 
-To populate the repository with your own materials, fork it to make a copy that
-will live in your own Github account. Once you populate and customize the
-repository to your liking, open a Pull Request to begin the review. 
+When requesting you software/data, an editor will give you read access to the
+repository. To populate the repository with your own materials, fork it to
+make a copy that will live in your own Github account. Once you populate and
+customize the repository to your liking, open a Pull Request to begin the
+review.
 
 ## Repository layout
 
-Your repository layout should resemble that of the template 
-[here](https://github.com/ORJournal/2024.0000)
-to the extent possible, although some variations may occur and there are no 
-inviolable rules. In general, the repository contents should be as follows.
+Your repository layout should resemble that of the template
+[here](https://github.com/ORJournal/2024.0000) to the extent possible,
+although some variations may occur and there are no inviolable rules. In
+general, the repository contents should be as follows.
 
- * `README.md` should describe the contribution, how to use it, how to cite
-   it, and how to replicate the experiments in the paper, following roughly
-   the format of the example. Please make sure to be specific about the version
-   numbers of any dependencies, hardware dependencies and anything else that might
-   be important to ensure reproducibility. Note that the `.md` extension means "markdown,"
-   a simple text formatting language you can learn about
+ * `README.md` should describe the contents of the repo, how to use any
+   software, how to cite it, and how to replicate the experiments in the
+   paper, following roughly the format of the example. Please make sure to be
+   specific about the version numbers of any dependencies, hardware
+   dependencies and anything else that might be important to ensure
+   reproducibility. Note that the `.md` extension means "markdown," a simple
+   text formatting language you can learn about
    [here](https://guides.github.com/features/mastering-markdown/).
    
  * `LICENSE` should be a file containing the text of the license under which
    you intend to distribute the software and/or data. You must provide a
-   license in order for the material to be used legally by others. An open source
-   license is preferred (see the list of approved licenses at [Open Source
-   Initiative](https://opensource.org/licenses), and the license should allow free
-   academic use at a minimum. Recommended licenses include the [MIT
+   license in order for the material to be used legally by others. An open
+   source license is preferred (see the list of approved licenses at [Open
+   Source Initiative](https://opensource.org/licenses), and the license should
+   allow free academic use at a minimum. Recommended licenses include the [MIT
    License](https://opensource.org/licenses/MIT) for software or any of the
    various [Creative Commons licenses](https://creativecommons.org/licenses/)
    for other types of material.
@@ -69,7 +82,7 @@ inviolable rules. In general, the repository contents should be as follows.
       URL https://INFORMSJoC.github.io/NameofRepo. Please let us know if you
       are interested in activating that option.
 
-   * `results` should containing any raw results from the paper, as well as
+   * `results` should contain any raw results from the paper, as well as
      any plots or figures.
 
 You may wish to have an additional README.md in any of the subdirectories to
@@ -135,7 +148,7 @@ The repo must be cited in your paper, as a regular reference, and appear in the 
  * What if I don't already have an existing repository, but I want to continue
    developing the software after the paper is published?
 
-   * This is highly encouraged, but further development should take place a on
+   * This is highly encouraged, but further development should take place on
      a personally managed site on Github or one of the other similar sites.
      You should put a link to the site where you will manage the software in
      the long-term in the README.md in the OR repository to ensure people
