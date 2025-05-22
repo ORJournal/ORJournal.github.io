@@ -93,6 +93,31 @@ provide additional information.
 As part of the review process, additional changes may be requested. These can
 also be submitted by a Pull Request.
 
+## Preparing for a replication study
+
+If you are submitting your code for a replication study, then there are some additional
+things to keep in mind. To make it as easy as possible for the editors to replicate
+the results in your paper, please provide the following information in your
+README.
+- Required hardware
+  - How many CPUs and/or GPUs are needed?
+  - How much memory is required?
+  - What hardware was used in the experiments reported in the paper?
+- Required software
+  - Programming of modeling language
+  - Additional dependencies (especially if proprietary)
+  - Operationg system
+- Required data (if not included in the repository)
+    
+Please also provide
+- Detailed instructions for installation of software
+- Scripts for running the experiments, compiling the data, and producing the tables and figures
+- Output logs from experiments done by the authors (if reproducing all experiments would be too time-consuming)
+
+In case replicating all experiments would be a long process, please divide the experiments into
+subsets that can be run in a reasonable amount of time and can verify an easily identifiable part
+of the reported results.
+
 ## Legal stuff
 
 Please ensure that all files contain proper copyright and licensing statements
