@@ -183,7 +183,7 @@ In case replicating all experiments would be a long process, please divide the e
 subsets that can be run in a reasonable amount of time and can verify an easily identifiable part
 of the reported results.
 
-## Review process 
+### Review process 
 
 The review process begins as soon as you submit your pull request. As part of the review process, 
 additional changes may be requested. If so, the area editor will communicate with you by putting
@@ -191,14 +191,14 @@ comments into the pull request. You can make the requested changes by updating y
 will be immediately reflected in the pull request. Once everything is finalized, then the pull request
 will be accepted. Upon publication of the paper, the repository will be made public. 
 
-## Legal stuff
+### Legal stuff
 
 Please ensure that all files contain proper copyright and licensing statements
 and that the copyright holders have been notified of the submission. The
 copyright holder may or may not be you, depending on your employment contract
 and who funded the work.
 
-## Archive and DOI
+### Archive and DOI
 
 Once accepted by the editor, a snapshot of the contents of the repo will be archived 
 by creating a tag (known as a release on Github) with the name `vXXXX.YYYY`, where
@@ -210,7 +210,7 @@ https://doi.org/10.1287/opre.XXXX.YYYY
 
 https://doi.org/10.1287/opre.XXXX.YYYY.cd
 
-## Citing the repo in your paper
+### Citing the repo in your paper
 
 The repo must be cited in your paper, as a regular reference, and appear in the list of references as follows (if using BibTex). Notice that you must use both the DOI and the Note lines to make this reference appear correctly.
 ```
@@ -224,7 +224,7 @@ The repo must be cited in your paper, as a regular reference, and appear in the 
 }  
 ```
 
-## FAQs
+### FAQs
 
  * In the process of the review, changes were made to the software and/or
  data that was originally submitted and I don't want the original version of
