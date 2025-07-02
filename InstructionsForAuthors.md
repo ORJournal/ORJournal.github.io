@@ -1,10 +1,69 @@
 # Procedures for submission of accompanying software and data
 
-Operations Research hosts accompanying software and data of some paper as online repositories 
-within the [ORJournal Github organization](https://github.com/ORJournal). Following are
-instructions for submitting your software and/or data when requested by an editor or
-associate editor.
+Software and data accompanying papers submitted to Operations Research are
+either submitted as tarballs along with the paper (the traditional process)
+or can also be submitted by creating an archive on Github, hosted in the
+[ORJournal](https://github.com/ORJournal) Github organization. The latter is
+typically the mode of submission when volunteering to participate in a 
+replication study so if you have not been contacted about that, you will
+most like be following the traditional method of submission. 
 
+## Submitting a Tarball/ZIP archive
+
+To make it easier for reviewers and readers who wish to look at your code and
+data to access it, please try to organize the files and directories according
+to the following recommendations. Of course, deviations are fine and there are 
+no hard rules, just try to organize things in a way that makes it easy to
+understand. The first three files described should almost always be there.
+
+ * `README` should describe the contents of the tarball, Ideally, you should
+   how to use any software and how to replicate the experiments in the
+   paper. Please try to be specific about required software dependencies (including
+   version numbers), hardware dependencies (e.g., GPUs) and anything else that might
+   be important.
+   
+ * `LICENSE` should be a file containing the text of the license under which
+   you intend to distribute the software and/or data. You must provide a
+   license in order for the material to be used legally by others. An open
+   source license is preferred (see the list of approved licenses at [Open
+   Source Initiative](https://opensource.org/licenses), and the license should
+   allow free academic use at a minimum. Recommended licenses include the [MIT
+   License](https://opensource.org/licenses/MIT) for software or any of the
+   various [Creative Commons licenses](https://creativecommons.org/licenses/)
+   for other types of material.
+
+ * `AUTHORS` is an optional file, standard in the open source world, that
+   lists the authors of the contribution (usually just a list of names and
+   e-mails).
+
+ * Depending on how you want to organize things, you may also have a
+   `Makefile` or other files needed to build the software and/or run the
+   experiments.
+
+ * Subdirectories
+
+   * `src` should contain the source code for any software.
+
+   * `data` should contain data files needed for experiments or used in the
+     paper.
+     
+   * `scripts` should contain any scripts used to replicate the experiments in
+     the paper or run other automated tests or experiments.
+
+   * `docs` contains any additional documentation. Note that it is possible for
+      the contents of `docs` to be a web site that will be hosted under the
+      URL https://INFORMSJoC.github.io/NameofRepo. Please let us know if you
+      are interested in activating that option.
+
+   * `results` should contain any raw results from the paper, as well as
+     any plots or figures.
+
+You may wish to have an additional README in any of the subdirectories to
+provide additional information.
+
+## Preparing for a replication study
+
+If you have volunteered for a replication study, then first of all, thank you!
 Note that there are two goals for this process. One is to allow editors to
 attempt to replicate the experiments and reproduce the empirical data and
 results associated with submitted papers. The other is to archive the code in
@@ -15,38 +74,38 @@ is a fixed snapshot we can guarantee will be available in the future. This is
 the case whether or not the code is available elsewhere already (such as in a
 Github repo or on Pypi. See the FAQs below for more information.
 
-## Repository Name
+### Accessing your repository
 
-You will be given access to a private repository created by the editorial
-staff. This is the repository that should be populated and that will be
+When requesting your software/data, an editor will give you read access to the
+repository to a private repository created by the editorial
+staff. This is the repository that should be populate and that will be
 reviewed and eventually archived with the paper. The name of the repository
 associated with your paper will be `XXXX.YYYY` and is derived from the
 manuscript number in manuscript central. Typically, `XXXX` will be the year in
 which the paper is submitted, whereas `YYYY` is a four digit sequence number
 that is part of the manuscript number.
 
-## Preparing your repository
+### Populating the repository
 
-When requesting you software/data, an editor will give you read access to the
-repository. To populate the repository with your own materials, fork it to
+To populate the repository with your own materials, fork it to
 make a copy that will live in your own Github account. Once you populate and
 customize the repository to your liking, open a Pull Request to begin the
 review.
 
-## Repository layout
-
-Your repository layout should resemble that of the template
+The contents of the repository should be organized to make it as easy as 
+possible for the associate editor to do the replication. The layout should 
+resemble that of the template
 [here](https://github.com/ORJournal/2024.0000) to the extent possible,
 although some variations may occur and there are no inviolable rules. In
 general, the repository contents should be as follows.
 
  * `README.md` should describe the contents of the repo, how to use any
-   software, how to cite it, and how to replicate the experiments in the
+   software, how to cite it (you will get a separate DOI for this after
+   the process is completed), and how to replicate the experiments in the
    paper, following roughly the format of the example. Please make sure to be
-   specific about the version numbers of any dependencies, hardware
-   dependencies and anything else that might be important to ensure
-   reproducibility. Note that the `.md` extension means "markdown," a simple
-   text formatting language you can learn about
+   specific about dependencies and anything else that might be important to ensure
+   reproducibility (more on this below). Note that the `.md` extension means
+   "markdown," a simple text formatting language you can learn about
    [here](https://guides.github.com/features/mastering-markdown/).
    
  * `LICENSE` should be a file containing the text of the license under which
@@ -88,14 +147,9 @@ general, the repository contents should be as follows.
 You may wish to have an additional README.md in any of the subdirectories to
 provide additional information.
 
-## Review process 
+### Things to keep in mind
 
-As part of the review process, additional changes may be requested. These can
-also be submitted by a Pull Request.
-
-## Preparing for a replication study
-
-If you are submitting your code for a replication study, then there are some additional
+When you are submitting your code for a replication study, there are some additional
 things to keep in mind. To make it as easy as possible for the editors to replicate
 the results in your paper, please provide the following information in your
 README.
@@ -113,7 +167,7 @@ README.
     
   * Additional dependencies (especially if proprietary)
     
-  * Operationg system
+  * Operating system
 
 * Required data (if not included in the repository)
     
@@ -122,11 +176,20 @@ Please also provide
   
 * Scripts for running the experiments, compiling the data, and producing the tables and figures
 
-* Output logs from experiments done by the authors (if reproducing all experiments would be too time-consuming)
+* Output logs from experiments done by the authors (if reproducing all experiments would be too
+  time-consuming).
 
 In case replicating all experiments would be a long process, please divide the experiments into
 subsets that can be run in a reasonable amount of time and can verify an easily identifiable part
 of the reported results.
+
+## Review process 
+
+The review process begins as soon as you submit your pull request. As part of the review process, 
+additional changes may be requested. If so, the area editor will communicate with you by putting
+comments into the pull request. You can make the requested changes by updating your fork and these 
+will be immediately reflected in the pull request. Once everything is finalized, then the pull request
+will be accepted. Upon publication of the paper, the repository will be made public. 
 
 ## Legal stuff
 
