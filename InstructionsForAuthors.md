@@ -16,8 +16,8 @@ to the following recommendations. Of course, deviations are fine and there are
 no hard rules, just try to organize things in a way that makes it easy to
 understand. The first three files described should almost always be there.
 
- * `README` should describe the contents of the tarball, Ideally, you should
-   how to use any software and how to replicate the experiments in the
+ * `README` should describe the contents of the tarball. Ideally, you should
+   describe how to use any software and how to replicate the experiments in the
    paper. Please try to be specific about required software dependencies (including
    version numbers), hardware dependencies (e.g., GPUs) and anything else that might
    be important.
@@ -76,11 +76,11 @@ Github repo or on Pypi. See the FAQs below for more information.
 
 ### Accessing your repository
 
-When requesting your software/data, an editor will give you read access to the
-repository to a private repository created by the editorial
-staff. This is the repository that should be populate and that will be
+When requesting your software/data, an editor will give you read access to
+to a private repository created by the editorial
+staff. This is the repository that should be populated and that will be
 reviewed and eventually archived with the paper. The name of the repository
-associated with your paper will be `XXXX.YYYY` and is derived from the
+associated with your paper Pypi will be `XXXX.YYYY` and is derived from the
 manuscript number in manuscript central. Typically, `XXXX` will be the year in
 which the paper is submitted, whereas `YYYY` is a four digit sequence number
 that is part of the manuscript number.
