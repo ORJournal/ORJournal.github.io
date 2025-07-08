@@ -1,12 +1,23 @@
 # Procedures for submission of accompanying software and data
 
-Software and data accompanying papers submitted to Operations Research are
-either submitted as tarballs along with the paper (the traditional process)
-or can also be submitted by creating an archive on Github, hosted in the
+All authors submitting a paper to _Operations Research_ are expected to make the 
+data and code necessary to reproduce the results in their paper available 
+(unless an exemption has been explicitly asked for and granted).
+
+Submission of software and data can bedone in two different ways. The traditional 
+process is to submit a tarball along with the paper, but it is also possible to 
+create an archive on Github, hosted in the
 [ORJournal](https://github.com/ORJournal) Github organization. The latter is
 typically the mode of submission when volunteering to participate in a 
-replication study so if you have not been contacted about that, you will
-most like be following the traditional method of submission. 
+replication study. If you have not been contacted about that, you will
+most like be following the traditional method of submission.  
+
+If you already host the software and/or data on Gtihub (or elsewhere), may reference 
+that hosting location in the paper, but we still ask authors to either prepare a tarball 
+(or an archive on Github) to ensure the exact data and code used to produce the results 
+in the paper is preserved along with the paper.  In the below, we provide suggestions 
+for how to organize your tarball that are based on the instructions given farther down 
+for what to do in order to prepare for a replication study.
 
 ## Submitting a Tarball/ZIP archive
 
