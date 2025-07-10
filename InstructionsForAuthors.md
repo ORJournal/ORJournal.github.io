@@ -1,10 +1,13 @@
 # Procedures for submission of accompanying software and data
 
+[_Note: This page is a supplement to the Code and Data Disclosure Policy
+[here](https://pubsonline.informs.org/page/opre/OPRE-code-and-%20data-disclosure-policy)_]
+
 All authors submitting a paper to _Operations Research_ are expected to make the 
 data and code necessary to reproduce the results in their paper available 
 (unless an exemption has been explicitly asked for and granted).
 
-Submission of software and data can bedone in two different ways. The traditional 
+Submission of software and data can be done in two different ways. The traditional 
 process is to submit a tarball along with the paper, but it is also possible to 
 create an archive on Github, hosted in the
 [ORJournal](https://github.com/ORJournal) Github organization. The latter is
@@ -12,7 +15,7 @@ typically the mode of submission when volunteering to participate in a
 replication study. If you have not been contacted about that, you will
 most like be following the traditional method of submission.  
 
-If you already host the software and/or data on Gtihub (or elsewhere), may reference 
+If you already host the software and/or data on Gtihub (or elsewhere), you may reference 
 that hosting location in the paper, but we still ask authors to either prepare a tarball 
 (or an archive on Github) to ensure the exact data and code used to produce the results 
 in the paper is preserved along with the paper.  In the below, we provide suggestions 
