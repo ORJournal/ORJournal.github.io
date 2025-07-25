@@ -94,7 +94,7 @@ When requesting your software/data, an editor will give you read access to
 to a private repository created by the editorial
 staff. This is the repository that should be populated and that will be
 reviewed and eventually archived with the paper. The name of the repository
-associated with your paper Pypi will be `XXXX.YYYY` and is derived from the
+associated with your paper will be `XXXX.YYYY` and is derived from the
 manuscript number in manuscript central. Typically, `XXXX` will be the year in
 which the paper is submitted, whereas `YYYY` is a four digit sequence number
 that is part of the manuscript number.
