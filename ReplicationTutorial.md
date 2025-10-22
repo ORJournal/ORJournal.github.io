@@ -47,9 +47,15 @@ Then add it as a remote and push (you need to set up an SSH key first).
 
 ### Build and Installation
 
+Most projects these days are written in high-level languages that do not require compilation. This simplifies things, but it can still be complicated to package your software in a way that makes it easy for another person to install in on their computer from scratch. 
+
 #### C/C++
 
+For codes written in C/C++, it is almost always necessary to provide either a hand-generated Makefile or a CMake setup to make building easy. Making C/C++ codes portable is difficult, so ensuring the code builds on Linux is probably the lowest common denominator.
+
 #### Python
+
+
 
 #### Julia
 
@@ -62,6 +68,7 @@ Then add it as a remote and push (you need to set up an SSH key first).
  * [Docker/Podman](https://docker.com)
  * [Nix](https://nixos.org/)
  * [Conda/Mamba](https://docs.conda.io/en/latest/)
+ * [Homebrew/Linuxbrew](https://brew.sh)
  * [Github](https://github.com/)
    * CodeSpaces
    * Actions
