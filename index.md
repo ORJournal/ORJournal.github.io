@@ -1,4 +1,4 @@
-## Welcome to the Operations Software and Data Repositories
+## Welcome to the *Operations Research* Software and Data Repositories
 
 This is the website for the GitHub repositories for hosting software and data associated with papers appearing in the journal [Operations Research](https://pubsonline.informs.org/journal/opre).
 
