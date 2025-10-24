@@ -2,9 +2,7 @@
 
 Most projects these days are written in high-level languages that do not require compilation. This simplifies things, but it can still be complicated to package your software in a way that makes it easy for another person to install in on their computer from scratch. 
 
-## Language-Specific Tool
-
-### C/C++
+## C/C++
 
 If you have a multi-file project coded natively in C/C++, using a tool to help other build code is a necessity. Below is a quick summary, but more detailed information is [here](CppBuild.md)
 
@@ -46,7 +44,7 @@ If you have a multi-file project coded natively in C/C++, using a tool to help o
    | **Autotools** | Traditional Unix distribution | Modern projects, Windows support, maintainability |
    | **xmake/Premake** | Game development, Lua enthusiasts | Need mature ecosystem, enterprise support |
 
-### Python
+## Python
 
 Highlights of Python's dependency mechanism are here. More details available [here](PythonDeps.md).
 
@@ -77,7 +75,7 @@ Highlights of Python's dependency mechanism are here. More details available [he
    - **Massive ecosystem**: PyPI hosts 500,000+ packages with minimal curation
    - **Ongoing standardization**: Community still converging on best practicesPython offers several methods for specifying project dependencies, each suited for different use cases:
 
-### Julia
+## Julia
 
 Highlights of Python's dependency mechanism are here. More details available [here](JuliaDeps.md).
 
@@ -117,7 +115,7 @@ Highlights of Python's dependency mechanism are here. More details available [he
    - **Scientific computing focus**: Designed with reproducibility in mind from day one
    - **Fast and efficient**: Modern resolver is quick even with large dependency trees
 
-### R
+## R
 
 Highlights of R's dependency mechanism are here. More details available [here](RDeps.md).
 
@@ -147,83 +145,4 @@ Highlights of R's dependency mechanism are here. More details available [here](R
    - Less sophisticated dependency resolution compared to Julia's Pkg
    - More centralized ecosystem (CRAN curation vs. PyPI's open model)
    - **renv** fills the role of Python's Poetry or Julia's built-in Pkg
-
-## Creating Isolated Reproducible Environments
-
-Here is a summary of options for creating enironments for running reprocible experiments. More details are [here](ReproucibleEnvironments.md)
-
- * Language-specific Virutal Environments
-    * `pyenv`
-    * `renv`
-    * `Pkg`
- * Cross-platform Package Managers
-   * [Conda/Mamba](https://docs.conda.io/en/latest/)
-   * [Homebrew/Linuxbrew](https://brew.sh)
-   * [Spack](https://spack.readthedocs.io/en/latest/features.html)
-   * [Nix](https://nixos.org/)
-   * [Conan](https://conan.io)
- * Containers
-   * [Docker](https://docker.com)
-   * [Podman](https://podman.io)
-   * [Singularity]()
- * [Jupyter Notebooks](https://jupyter.org)
- * Cloud
-   * [Binder](https://mybinder.org)
-   * [Colab](https://colab.google.com)
-   * [Code Ocean](https://codeocean.com)
-   * [Github](https://github.com/)
-     * CodeSpaces
-     * Actions
-
-## Overall Recommendations by Use Case
-
-### Quick Local Experiment (Python)
-```bash
-# Lightweight approach
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
-### Shareable Experiment (Any Language)
-```dockerfile
-# Docker for portability
-FROM python:3.9
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-COPY . /app
-WORKDIR /app
-```
-
-### Academic Paper Reproduction
-- **Docker** + published image on Docker Hub
-- **Binder** for Jupyter notebooks
-- **Code Ocean** for full reproducibility platform
-
-### HPC Cluster
-- **Singularity** containers
-- Or **Spack** for package management
-- Plus job scheduler (SLURM, PBS)
-
-### Maximum Reproducibility
-- **Nix** for bit-for-bit reproducibility
-- Or **Docker** with pinned base image tags and checksums
-- Version control everything (code, Dockerfile, lock files)
-
-### Long-term Archival
-- **Docker images** pushed to registry
-- **Zenodo** or **Docker Hub** for permanent storage
-- Include checksums and version tags
-
-### Layered Approach
-Combine multiple tools for complete reproducibility:
-- **Language environment** (venv, renv, Pkg)
-- **+ Version pinning** (requirements.txt, lock files)
-- **+ Container** (Docker, Singularity)
-- **+ Version control** (git)
-
-### Trade-offs
-- **Lightweight** (venv) → Fast, easy, but limited isolation
-- **Medium** (conda, Docker) → Good balance for most use cases
-- **Heavy** (VMs, Nix) → Maximum reproducibility, higher complexity
 
