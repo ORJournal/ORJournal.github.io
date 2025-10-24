@@ -331,7 +331,8 @@ Before submission:
 
 See more details [here](PackageContents.md).
 
-The contents of the repository should be organized to make it as easy as possible for the associate editor to do the replication. This can mean that 
+The contents of the repository should be organized to make it as easy as possible for the associate editor to do the replication. This can mean that there should be scripts not only to replicate the experiments in the paper, but also to compile raw data into tables and figures. Ideally, there should be one script (that may itself call other scripts) that performs all experiments, compiles the data, and produces tables and figures. The scripts should correspond closely to the structure of the paper, so that it is clear where to find the part of the script specifically for generating a particular table or figure. There should also be a description of what the expected output is (what files should be produced, etc.) and some sort of indicator of progress. A script that runs for hours without printing anything to the screen is not ideal.
+
  * `README.md` 
  * `LICENSE` 
  * `AUTHORS` 
@@ -350,7 +351,7 @@ provide additional informatio
 
 ## Documentation 
 
-See more details [here](READMEContents.md).
+Documentation should be contained in a file called `README.md` with the following contents.
 
 1. How to reproduce the environment
 1. How to run experiments
