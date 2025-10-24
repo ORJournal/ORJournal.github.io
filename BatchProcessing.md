@@ -2,7 +2,7 @@
 
 ## Basic Shell Scripting
 
-More flexible - generate parameter combinations programmatically:
+Basic job control can be done using a bash script, which just records the steps that would be taken to do things manually, possibly with some looping and logging.
 
 ```bash
 #!/bin/bash
@@ -174,96 +174,3 @@ if __name__ == '__main__':
  * [Sacred](https://sacred.readthedocs.io/en/stable/)
  * [SLURM]
 
-#### Best Practices
-
- 1. Unique Experiment IDs
-
-    Always generate unique identifiers:
-
-    ```python
-    import uuid
-    from datetime import datetime
-
-    # Timestamp-based
-    exp_id = f"exp_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
-
-    # UUID-based
-    exp_id = f"exp_{uuid.uuid4().hex[:8]}"
-
-    # Parameter-based
-    exp_id = f"lr{lr}_bs{bs}_seed{seed}"
-    ```
-
- 1. Logging and Checkpointing
-
-    ```python
-    import logging
-    from pathlib import Path
-
-    def setup_logging(exp_dir):
-        """Setup logging for experiment"""
-        log_file = exp_dir / 'experiment.log'
-    
-        logging.basicConfig(
-            level=logging.INFO,
-            format='%(asctime)s - %(levelname)s - %(message)s',
-            handlers=[
-                logging.FileHandler(log_file),
-                logging.StreamHandler()
-            ]
-        )
-
-    # In experiment script
-    setup_logging(exp_dir)
-    logging.info(f"Starting experiment with params: {params}")
-    ```
-
- 1. Error Handling
-
-    ```python
-    def safe_run_experiment(params):
-        """Run experiment with error handling"""
-        try:
-            result = run_experiment(params)
-            return {'success': True, 'result': result}
-        except Exception as e:
-            logging.error(f"Experiment failed: {e}")
-            return {'success': False, 'error': str(e)}
-    ```
-
- 1. Resource Management
-
-    ```python
-    import psutil
-    import time
-
-    def monitor_resources(interval=60):
-        """Monitor CPU and memory usage"""
-        while True:
-            cpu = psutil.cpu_percent(interval=1)
-            mem = psutil.virtual_memory().percent
-            logging.info(f"CPU: {cpu}%, Memory: {mem}%")
-            time.sleep(interval)
-
-    # Run in background thread
-    import threading
-    monitor_thread = threading.Thread(target=monitor_resources, daemon=True)
-    monitor_thread.start()
-    ```
-
- 1. Results Organization
-
-    ```
-    experiments/
-    ├── exp_001_20250101_120000/
-    │   ├── params.json
-    │   ├── metrics.json
-    │   ├── model.pkl
-    │   ├── logs/
-    │   │   └── training.log
-    │   └── plots/
-    │       └── learning_curve.png
-    ├── exp_002_20250101_130000/
-    │   └── ...
-    └── summary.csv
-    ```
