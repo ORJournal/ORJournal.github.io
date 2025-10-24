@@ -14,7 +14,7 @@ This tutorial was presented at the *Workshop on Replication at INFORMS Pubs* on 
    * [Build and Dependendecy Management](#build-and-dependency-management) 
    * [Using Isolated/Reproducible Environments](#using-isolated-environments)
  * [Compiling Tables and Figures](#compiling-tables-and-figures)
- * [Replication Package](PackageContents.md)
+ * [Replication Package](#replication-package)
  * [Documentation](#documentation)
  * [Pitfalls](#common-pitfalls)
 
