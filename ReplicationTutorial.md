@@ -238,7 +238,7 @@ The most reliable way to ensure replicability is to provide the reviewer with a 
 
 ## Compiling Tables and Figures 
 
-See more details [here](TablesAndFigures.md)
+See more details [here](TablesAndFigures.md).
 
 Use scripted workflows (Python/R) for reproducibility. Export to LaTeX for tables, PDF for figures. Automate with Make or scripts. Never create tables/figures manually.
 
