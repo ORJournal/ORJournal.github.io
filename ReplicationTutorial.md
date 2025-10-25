@@ -16,8 +16,9 @@ This tutorial was presented at the *Workshop on Replication at INFORMS Pubs* on 
  * [Compiling Tables and Figures](#compiling-tables-and-figures)
  * [Replication Package](#replication-package)
  * [Documentation](#documentation)
+ * [Examples](#examples)
  * [Pitfalls](#common-pitfalls)
-
+   
 # Overview
 
 Levels of Reproducibility
@@ -346,8 +347,7 @@ The contents of the repository should be organized to make it as easy as possibl
    * `results` should contain any raw results, as well as
      any plots or figures.
 
-You may wish to have an additional README.md in any of the subdirectories to
-provide additional informatio
+You may wish to have an additional README.md in any of the subdirectories to provide additional information.
 
 ## Documentation 
 
@@ -375,7 +375,18 @@ Documentation should be contained in a file called `README.md` with the followin
     ## Installation
     ...
     ```
-    
+
+## Examples
+
+ - [Operations Research](https://orjournal.github.io/)
+   - https://github.com/ORJournal/2023.0386
+   - https://github.com/ORJournal/2024.1069
+   - https://github.com/ORJournal/2023.0254
+ - Management Science
+   - https://pubsonline.informs.org/doi/10.1287/mnsc.2023.02221
+   - https://pubsonline.informs.org/doi/10.1287/mnsc.2022.01120
+   - https://pubsonline.informs.org/doi/10.1287/mnsc.2023.03124
+
 ## Common Pitfalls
 
 - Not pinning versions (dependencies drift over time)
