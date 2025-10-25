@@ -4,7 +4,7 @@ Most projects these days are written in high-level languages that do not require
 
 ## C/C++
 
-If you have a multi-file project coded natively in C/C++, using a tool to help other build code is a necessity. Below is a quick summary, but more detailed information is [here](CppBuild.md)
+If you have a multi-file project coded natively in C/C++, using a tool to help other build code is a necessity. Below is a quick summary, but more detailed information is [here](CppBuild.md).
 
  * The Big Picture
    - **No single standard**: C/C++ has the most fragmented build ecosystem of any major language
