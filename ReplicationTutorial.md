@@ -41,7 +41,7 @@ See more details [here](VersionControl.md)
 
 ## Batch Processing 
 
-See more details details [here](BatchProcessing.md)
+See more details details [here](BatchProcessing.md).
 
 1. Use scripting to automate workflows.
 
@@ -162,7 +162,7 @@ See more details details [here](BatchProcessing.md)
 
 ## Build and Dependency Management 
 
-See more details [here](BuildAndDependencyManagement.md)
+See more details [here](BuildAndDependencyManagement.md).
 
 The goal of build and dependency management is to allow reviewers and other users to build (if required) and install your code, as well as replicating the environment in which the exeriments were performed as closely as possible (same version of dependencies). This is typically done using language-specific tools.
 
@@ -227,7 +227,7 @@ The goal of build and dependency management is to allow reviewers and other user
 
 ## Using Isolated Environments 
 
-See more details [here](ReproducibleEnvironments.md)
+See more details [here](ReproducibleEnvironments.md).
 
 The most reliable way to ensure replicability is to provide the reviewer with a way to construct an isolated environment where all dependencies can be automatically installed and the experiments run in a "clean" environment. This also makes it easy for authors to test their own replication package.
 
